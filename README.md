@@ -16,8 +16,8 @@ The purpose of this API is to give users insight about events that are happening
 
     #### Parameters: 
     - area: the name of the city
-    - start: year/month/date/hour
-    - end: year/month/date/hour
+    - start: *numeric values* formatted as year/month/date/hour
+    - end: *numeric values* formatted as year/month/date/hour
 
 <br>
 

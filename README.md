@@ -8,7 +8,6 @@ The purpose of this API is to give users insight about events that are happening
 - ### [GET] Search all
     ```https://what-is-good-manitoba.ca/```
 
-
 - ### [GET] Search based on area and datetime range
     ```https://what-is-good-manitoba.ca?location=area&start=datetime&end=datetime```
 
@@ -36,3 +35,4 @@ The purpose of this API is to give users insight about events that are happening
 ## Resources
 
 ## Sample requests and responses
+

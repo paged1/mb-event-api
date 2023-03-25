@@ -8,10 +8,8 @@ The purpose of this API is to give users insight about events that are happening
 - ### [GET] Search all events
     ```https://what-is-good-manitoba.ca/events```
 
-- ### [GET] Search based on area and datetime range
+- ### [GET] Search based on city and datetime range
     ```https://what-is-good-manitoba.ca/events?location=city&start=startTime&end=endTime```
-
-  <br>
 
     #### Parameters: 
     - city: the name of the city
@@ -23,20 +21,28 @@ The purpose of this API is to give users insight about events that are happening
 - ### [POST] Upload new event
     ```https://what-is-good-manitoba.ca/submit```
 
-  <br>
-
     #### Body: 
     - [event](#event)
-    - [performer](#performer)
-    - [venue](#vanue)
+    - [venue](#venue)
 
 <br>
 
 ## Resources
 
-### Event
-### Performer
+### Details
+ID
+host
+description
+startTime
+endTime
+tags
+
 ### Venue
+ID 
+name
+phone
+email
+city
+address
 
 ## Sample requests and responses
-

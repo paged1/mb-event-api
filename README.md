@@ -2,7 +2,7 @@
 
 ## Description
 
-The purpose of this API is to give users insight about events that are happening in Manitoba, without having to tread through the websites of many venues.
+Manitoba Events API is an event registry that makes it easy to access and share details for upcoming events. Providing a single source to all local events, this API removes the hassle of scouring each venues website or scouting for lesser known and more specialized events. Manitoba Events API also benefits buisness owners by extending their reach and increasing visibility in relevant searches and advertising.
 
 ## Endpoints
 - ### [GET] Search all events
@@ -31,6 +31,7 @@ The purpose of this API is to give users insight about events that are happening
 
 ### Details
 ID
+ticket
 host
 description
 startTime

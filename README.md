@@ -12,9 +12,9 @@ Manitoba Events API is an event registry that makes it easy to access and share 
     ```https://what-is-good-manitoba.ca/events?location=city&start=startTime&end=endTime```
 
     #### Parameters: 
-    - city: the name of the city
-    - startTime: *numeric values* formatted as year/month/date/hour
-    - endTime: *numeric values* formatted as year/month/date/hour
+    - | city | string | the name of the city where the events  take place. |
+    - | startTime | string | The starting time of the events (nummeric) formatted as year/month/date/hour. |
+    - | endTime | string | The starting time of the events (nummeric) formatted as year/month/date/hour. |
 
 <br>
 
@@ -22,7 +22,7 @@ Manitoba Events API is an event registry that makes it easy to access and share 
     ```https://what-is-good-manitoba.ca/submit```
 
     #### Body: 
-    - [event](#event)
+    - [details](#details)
     - [venue](#venue)
 
 <br>

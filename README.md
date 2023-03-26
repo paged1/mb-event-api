@@ -2,16 +2,14 @@
 
 ## Description
 
-The purpose of this API is to give users insight about events that are happening in Manitoba, without having to tread through the websites of many venues.
+Manitoba Events API is an event registry that makes it easy to access and share details for upcoming events. Providing a single source to all local events, this API removes the hassle of scouring each venues website or scouting for lesser known and more specialized events. Manitoba Events API also benefits buisness owners by extending their reach and increasing visibility in relevant searches and advertising.
 
 ## Endpoints
 - ### [GET] Search all events
     ```https://what-is-good-manitoba.ca/events```
 
-- ### [GET] Search based on area and datetime range
+- ### [GET] Search based on city and datetime range
     ```https://what-is-good-manitoba.ca/events?location=city&start=startTime&end=endTime```
-
-  <br>
 
     #### Parameters: 
     - city: the name of the city
@@ -23,19 +21,15 @@ The purpose of this API is to give users insight about events that are happening
 - ### [POST] Upload new event
     ```https://what-is-good-manitoba.ca/submit```
 
-  <br>
-
     #### Body: 
     - [event](#event)
-    - [performer](#performer)
-    - [venue](#vanue)
+    - [venue](#venue)
 
 <br>
 
 ## Resources
 
 ### Details
-
 The Details object specifies information about the event. Details are returned inside an Event object.
 
 | Field | Type | Description |
@@ -61,4 +55,3 @@ city | string | The city the venue is located in.
 address | string | The address of the venue.
 
 ## Sample requests and responses
-

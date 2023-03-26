@@ -29,27 +29,29 @@ Manitoba Events API is an event registry that makes it easy to access and share 
 
 ## Sample Request
 
-This is an example of a request to the `/venue/all` endpoint, which returns a list of all venues
+This is an example of a request to the `/submit` endpoint, which expects an event details object and either the ID of an existing venue or venue object if it doesn't exist yet.
 
-### Parameters
+### Request Body
 
-there are optional search parameters that you can use to filter the results.
+- Option 1: venue exists:
+``` json
+{
+}
+```
 
-
-#### First parameter (string)
+- Option 2: venue does not exist yet:
+``` json
+{
+}
+```
 
 ### Example response structure
 
-The response will be an object with a status code (int) and an array of venue objects.
+The response data will be a JSON object with a status attribute and both the newly created event and venue.
 
 ``` json
 {
   "status": 200,
-  [
-    {
-      // TODO add the object structure in here
-    },
-    ...
-  ]
+  // TODO add the object structure in here
 }
 ```

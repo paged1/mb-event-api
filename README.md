@@ -34,7 +34,7 @@ Manitoba Events API is an event registry that makes it easy to access and share 
 - ### Details
 The Details object specifies information about the event. Details are returned inside an Event object.
 
-```json
+```js
 {
   "ID": 0,           // The id of the event that these Details refer to.
   "ticket": "",      // A URL that leads to the website to buy a ticket to the event.
@@ -49,7 +49,7 @@ The Details object specifies information about the event. Details are returned i
 - ### Venue
 A Venue object contains information about various venues where Events are held.
 
-```json
+```js
 {
     "ID": 0,       // A unique identifier for the venue.
     "name": "",    // The name of the venue.
@@ -109,12 +109,7 @@ The response data will be a JSON object with a status attribute and both the new
     },
     "venue": {
         "ID": 5056,
-        "name": "Canada Life Centre",
-        "phone": "204-999-9999",
-        "email": "contact@canadalife.ca",
-        "city": "Winnipeg",
-        "address": "300 Portage Ave", 
-  }
+    }
 }
 ```
 

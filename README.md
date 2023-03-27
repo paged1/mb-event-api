@@ -29,7 +29,7 @@ Manitoba Events API is an event registry that makes it easy to access and share 
 
 ## Resources
 
-### Details
+- ### Details
 The Details object specifies information about the event. Details are returned inside an Event object.
 
 ```
@@ -46,7 +46,7 @@ The Details object specifies information about the event. Details are returned i
 
 <br>
 
-### Venue
+- ### Venue
 A Venue object contains information about various venues where Events are held.
 
 ```

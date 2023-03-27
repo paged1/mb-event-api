@@ -18,7 +18,6 @@ Manitoba Events API is an event registry that makes it easy to access and share 
     - `"startTime": "", // The starting time of the event formatted numerically as year/month/day/hour.`
     - `"endTime": "",   // The ending time of the event formatted numerically as year/month/day/hour.`
 
-<br>
 
 - ### [POST] Upload new event
     ```https://what-is-good-manitoba.ca/submit```
@@ -32,7 +31,7 @@ Manitoba Events API is an event registry that makes it easy to access and share 
 - ### Details
 The Details object specifies information about the event. Details are returned inside an Event object.
 
-```
+``` js
 {
   "ID": 0,           // The id of the event that these Details refer to.
   "ticket": "",      // A URL that leads to the website to buy a ticket to the event.
@@ -49,7 +48,7 @@ The Details object specifies information about the event. Details are returned i
 - ### Venue
 A Venue object contains information about various venues where Events are held.
 
-```
+``` js
 {
     "ID": 0,       // A unique identifier for the venue.
     "name": "",    // The name of the venue.
@@ -61,3 +60,29 @@ A Venue object contains information about various venues where Events are held.
 ```
 
 ## Sample requests and responses
+This is an example of a request to the `/submit` endpoint, which expects an event details object and either the ID of an existing venue or venue object if it doesn't exist yet.
+
+### Request Body
+
+- Option 1: venue exists:
+``` js
+{
+}
+```
+
+- Option 2: venue does not exist yet:
+``` js
+{
+}
+```
+
+### Example response structure
+
+The response data will be a JSON object with a status attribute and both the newly created event and venue.
+
+``` js
+{
+  "status": 200,
+  // TODO add the object structure in here
+}
+```
